@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="4" result="Failed" total="4" passed="0" failed="4" inconclusive="0" skipped="0" asserts="26" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-06-24 21:42:17Z" end-time="2018-06-24 21:46:04Z" duration="226.228375">
+  <command-line><![CDATA["E:\Google Drive\BetClick\EvernoteTest\packages\NUnit.ConsoleRunner.3.8.0\tools\nunit3-console.exe"  "E:\Google Drive\BetClick\EvernoteTest\EvernoteTest\bin\Debug\EvernoteTest.dll"]]></command-line>
+  <test-suite type="Assembly" id="0-1007" name="EvernoteTest.dll" fullname="E:\Google Drive\BetClick\EvernoteTest\EvernoteTest\bin\Debug\EvernoteTest.dll" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2018-06-24 21:42:19Z" end-time="2018-06-24 21:46:04Z" duration="224.270681" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="26">
+    <environment framework-version="3.10.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601.65536" platform="Win32NT" cwd="E:\Google Drive\BetClick\EvernoteTest\packages\NUnit.ConsoleRunner.3.8.0\tools" machine-name="GILBERT" user="GilbertZerafa" user-domain="Gilbert" culture="en-GB" uiculture="en-US" os-architecture="x86" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="E:\Google Drive\BetClick\EvernoteTest\packages\NUnit.ConsoleRunner.3.8.0\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="2" />
+    </settings>
+    <properties>
+      <property name="_PID" value="9108" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1008" name="EvernoteTest" fullname="EvernoteTest" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2018-06-24 21:42:19Z" end-time="2018-06-24 21:46:04Z" duration="224.212689" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="26">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="0-1000" name="ChromeTesting" fullname="EvernoteTest.ChromeTesting" classname="EvernoteTest.ChromeTesting" runstate="Runnable" testcasecount="0" result="Passed" start-time="2018-06-24 21:42:19Z" end-time="2018-06-24 21:42:19Z" duration="0.001550" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0" />
+      <test-suite type="TestSuite" id="0-1009" name="Features" fullname="EvernoteTest.Features" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2018-06-24 21:42:19Z" end-time="2018-06-24 21:46:04Z" duration="224.203879" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="26">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="0-1001" name="LoginFeature" fullname="EvernoteTest.Features.LoginFeature" classname="EvernoteTest.Features.LoginFeature" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2018-06-24 21:42:19Z" end-time="2018-06-24 21:43:43Z" duration="83.636385" total="2" passed="0" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="8">
+          <properties>
+            <property name="Description" value="Login" />
+          </properties>
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <output><![CDATA[-> Using app.config
+]]></output>
+          <test-case id="0-1003" name="FailLoginNoCreds" fullname="EvernoteTest.Features.LoginFeature.FailLoginNoCreds" methodname="FailLoginNoCreds" classname="EvernoteTest.Features.LoginFeature" runstate="Runnable" seed="989208628" result="Failed" label="Error" start-time="2018-06-24 21:42:20Z" end-time="2018-06-24 21:42:59Z" duration="38.379947" asserts="3">
+            <properties>
+              <property name="Description" value="FailLoginNoCreds" />
+              <property name="Category" value="mytag" />
+            </properties>
+            <failure>
+              <message><![CDATA[TearDown : OpenQA.Selenium.WebDriverException : no such session
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86)]]></message>
+              <stack-trace><![CDATA[--TearDown
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Close()
+   at EvernoteTest.HookScenarios.AfterScenario() in E:\Google Drive\BetClick\EvernoteTest\EvernoteTest\HookScenarios.cs:line 26
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
+   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()
+   at EvernoteTest.Features.LoginFeature.ScenarioTearDown()]]></stack-trace>
+            </failure>
+            <output><![CDATA[Given I have visted https://evernote.com/
+Log: Page passed to be navigated
+-> done: LoginSteps.GivenIHaveVistedWww_Evernote_Com("https://evernote....") (9.3s)
+When I confirn the page is loaded
+Log: Intended page loaded
+-> done: LoginSteps.WhenIConfirnThePageIsLoaded() (0.8s)
+And I have to click on sign button
+Log: Login button pressed
+-> done: LoginSteps.WhenIHaveToClickOnSignButton() (2.6s)
+Then the new page should be https://www.evernote.com/Login.action
+Log: Intended page loaded
+-> done: LoginSteps.ThenTheNewPageShouldBeHttpsWww_Evernote_ComLogin_Action("https://www.evern...") (0.0s)
+When I press the continue button
+Log: Continue Button Pressed
+-> done: LoginSteps.WhenIPressTheContinueButton() (0.1s)
+Then I should see an error Required data missing
+Log: Correct Error message!
+-> done: LoginSteps.ThenIShouldSeeAnErrorRequiredDataMissing("Required data mis...") (2.1s)
+]]></output>
+          </test-case>
+          <test-case id="0-1002" name="SuccessfulLogin" fullname="EvernoteTest.Features.LoginFeature.SuccessfulLogin" methodname="SuccessfulLogin" classname="EvernoteTest.Features.LoginFeature" runstate="Runnable" seed="1702622084" result="Failed" label="Error" start-time="2018-06-24 21:42:59Z" end-time="2018-06-24 21:43:43Z" duration="44.460766" asserts="5">
+            <properties>
+              <property name="Description" value="SuccessfulLogin" />
+              <property name="Category" value="mytag" />
+            </properties>
+            <failure>
+              <message><![CDATA[TearDown : OpenQA.Selenium.WebDriverException : no such session
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86)]]></message>
+              <stack-trace><![CDATA[--TearDown
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Close()
+   at EvernoteTest.HookScenarios.AfterScenario() in E:\Google Drive\BetClick\EvernoteTest\EvernoteTest\HookScenarios.cs:line 26
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
+   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()
+   at EvernoteTest.Features.LoginFeature.ScenarioTearDown()]]></stack-trace>
+            </failure>
+            <output><![CDATA[-> warning: The previous ScenarioContext was not disposed.
+Given I have visted https://evernote.com/
+Log: Page passed to be navigated
+-> done: LoginSteps.GivenIHaveVistedWww_Evernote_Com("https://evernote....") (10.6s)
+When I confirn the page is loaded
+Log: Intended page loaded
+-> done: LoginSteps.WhenIConfirnThePageIsLoaded() (0.3s)
+And I have to click on sign button
+Log: Login button pressed
+-> done: LoginSteps.WhenIHaveToClickOnSignButton() (3.9s)
+Then the new page should be https://www.evernote.com/Login.action
+Log: Intended page loaded
+-> done: LoginSteps.ThenTheNewPageShouldBeHttpsWww_Evernote_ComLogin_Action("https://www.evern...") (0.0s)
+When login page is loaded fill email with gilbert.zerafa@gmail.com
+Log: Email / Username Entered
+-> done: LoginSteps.WhenLoginPageIsLoadedFillEmailWithUsername("gilbert.zerafa@gm...") (0.8s)
+And I press the continue button
+Log: Continue Button Pressed
+-> done: LoginSteps.WhenIPressTheContinueButton() (0.1s)
+Then I should see the password field
+Log: Password Field Visable
+-> done: LoginSteps.ThenIShouldSeeThePasswordField() (0.1s)
+When the password field is displayed fill it with Test123!
+Log: Password Field Filled
+-> done: LoginSteps.WhenThePasswordFieldIsDisplayedFillItWithPassword("Test123!") (2.1s)
+And I press the sign-in button
+Log: Sign-in Button Pressed
+-> done: LoginSteps.WhenIPressTheSign_InButton() (3.4s)
+Then the new page should contain https://www.evernote.com/Home.action
+Log: Intended page loaded
+-> done: LoginSteps.ThenTheNewPageShouldContain("https://www.evern...") (3.6s)
+When I click on the account image
+-> done: LoginSteps.WhenIClickOnTheAccountImage() (3.9s)
+And the username should be gilbert.zerafa@gmail.com
+Log: Correct user profile loaded!
+-> done: LoginSteps.ThenTheUsernameShouldBe("gilbert.zerafa@gm...") (0.8s)
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1004" name="NotesFeature" fullname="EvernoteTest.Features.NotesFeature" classname="EvernoteTest.Features.NotesFeature" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2018-06-24 21:43:43Z" end-time="2018-06-24 21:46:04Z" duration="140.542331" total="2" passed="0" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="18">
+          <properties>
+            <property name="Description" value="Notes" />
+          </properties>
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1005" name="CreateNote" fullname="EvernoteTest.Features.NotesFeature.CreateNote" methodname="CreateNote" classname="EvernoteTest.Features.NotesFeature" runstate="Runnable" seed="282416941" result="Failed" label="Error" start-time="2018-06-24 21:43:43Z" end-time="2018-06-24 21:44:51Z" duration="67.980325" asserts="7">
+            <properties>
+              <property name="Description" value="CreateNote" />
+              <property name="Category" value="mytag" />
+            </properties>
+            <failure>
+              <message><![CDATA[TearDown : OpenQA.Selenium.WebDriverException : no such session
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86)]]></message>
+              <stack-trace><![CDATA[--TearDown
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Close()
+   at EvernoteTest.HookScenarios.AfterScenario() in E:\Google Drive\BetClick\EvernoteTest\EvernoteTest\HookScenarios.cs:line 26
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
+   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()
+   at EvernoteTest.Features.NotesFeature.ScenarioTearDown()]]></stack-trace>
+            </failure>
+            <output><![CDATA[-> warning: The previous ScenarioContext was not disposed.
+Given I have visted https://evernote.com/
+Log: Page passed to be navigated
+-> done: LoginSteps.GivenIHaveVistedWww_Evernote_Com("https://evernote....") (4.9s)
+When I confirn the page is loaded
+Log: Intended page loaded
+-> done: LoginSteps.WhenIConfirnThePageIsLoaded() (0.7s)
+And I have to click on sign button
+Log: Login button pressed
+-> done: LoginSteps.WhenIHaveToClickOnSignButton() (2.9s)
+Then the new page should be https://www.evernote.com/Login.action
+Log: Intended page loaded
+-> done: LoginSteps.ThenTheNewPageShouldBeHttpsWww_Evernote_ComLogin_Action("https://www.evern...") (0.0s)
+When login page is loaded fill email with gilbert.zerafa@gmail.com
+Log: Email / Username Entered
+-> done: LoginSteps.WhenLoginPageIsLoadedFillEmailWithUsername("gilbert.zerafa@gm...") (0.8s)
+And I press the continue button
+Log: Continue Button Pressed
+-> done: LoginSteps.WhenIPressTheContinueButton() (0.1s)
+Then I should see the password field
+Log: Password Field Visable
+-> done: LoginSteps.ThenIShouldSeeThePasswordField() (0.1s)
+When the password field is displayed fill it with Test123!
+Log: Password Field Filled
+-> done: LoginSteps.WhenThePasswordFieldIsDisplayedFillItWithPassword("Test123!") (2.4s)
+And I press the sign-in button
+Log: Sign-in Button Pressed
+-> done: LoginSteps.WhenIPressTheSign_InButton() (5.1s)
+Then the new page should contain https://www.evernote.com/Home.action
+Log: Intended page loaded
+-> done: LoginSteps.ThenTheNewPageShouldContain("https://www.evern...") (2.0s)
+When I click on the add note button
+Log: Add note button selected
+-> done: NoteSteps.WhenIClickOnTheAddNoteButton() (7.7s)
+And I confirm that a new note is provided
+Log: New note provided
+-> done: NoteSteps.WhenIConfirmThatANewNoteIsProvided() (2.2s)
+And I enter Title1 note title
+Log: Note Title Entered
+-> done: NoteSteps.WhenIEnterNoteTitle("Title1") (3.6s)
+Then I click on the done button
+Log: Done button clicked
+-> done: NoteSteps.ThenIClickOnTheDoneButton() (2.8s)
+When I see the note list
+Log: Note list provided
+-> done: NoteSteps.WhenISeeTheNoteList() (2.2s)
+Then I confirm that the new note Title1 is added
+Log: Added note listed!
+-> done: NoteSteps.ThenIConfirmThatTheNewNoteIsAdded("Title1") (2.8s)
+When I click on the account image
+-> done: LoginSteps.WhenIClickOnTheAccountImage() (5.0s)
+And I will logout
+-> done: NoteSteps.WhenIWillLogout() (5.0s)
+]]></output>
+          </test-case>
+          <test-case id="0-1006" name="NoteStillListedAfterLogOut" fullname="EvernoteTest.Features.NotesFeature.NoteStillListedAfterLogOut" methodname="NoteStillListedAfterLogOut" classname="EvernoteTest.Features.NotesFeature" runstate="Runnable" seed="525148036" result="Failed" label="Error" start-time="2018-06-24 21:44:51Z" end-time="2018-06-24 21:46:04Z" duration="72.555563" asserts="11">
+            <properties>
+              <property name="Description" value="NoteStillListedAfterLogOut" />
+              <property name="Category" value="mytag" />
+            </properties>
+            <failure>
+              <message><![CDATA[TearDown : OpenQA.Selenium.WebDriverException : no such session
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86)]]></message>
+              <stack-trace><![CDATA[--TearDown
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Close()
+   at EvernoteTest.HookScenarios.AfterScenario() in E:\Google Drive\BetClick\EvernoteTest\EvernoteTest\HookScenarios.cs:line 26
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.InvokeHook(IBindingInvoker invoker, IHookBinding hookBinding, HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType hookType)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireScenarioEvents(HookType bindingEvent)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
+   at TechTalk.SpecFlow.TestRunner.OnScenarioEnd()
+   at EvernoteTest.Features.NotesFeature.ScenarioTearDown()]]></stack-trace>
+            </failure>
+            <output><![CDATA[-> warning: The previous ScenarioContext was not disposed.
+Given I have visted https://evernote.com/
+Log: Page passed to be navigated
+-> done: LoginSteps.GivenIHaveVistedWww_Evernote_Com("https://evernote....") (5.3s)
+When I confirn the page is loaded
+Log: Intended page loaded
+-> done: LoginSteps.WhenIConfirnThePageIsLoaded() (0.1s)
+And I have to click on sign button
+Log: Login button pressed
+-> done: LoginSteps.WhenIHaveToClickOnSignButton() (3.9s)
+Then the new page should be https://www.evernote.com/Login.action
+Log: Intended page loaded
+-> done: LoginSteps.ThenTheNewPageShouldBeHttpsWww_Evernote_ComLogin_Action("https://www.evern...") (0.1s)
+When login page is loaded fill email with gilbert.zerafa@gmail.com
+Log: Email / Username Entered
+-> done: LoginSteps.WhenLoginPageIsLoadedFillEmailWithUsername("gilbert.zerafa@gm...") (0.5s)
+And I press the continue button
+Log: Continue Button Pressed
+-> done: LoginSteps.WhenIPressTheContinueButton() (0.1s)
+Then I should see the password field
+Log: Password Field Visable
+-> done: LoginSteps.ThenIShouldSeeThePasswordField() (0.0s)
+When the password field is displayed fill it with Test123!
+Log: Password Field Filled
+-> done: LoginSteps.WhenThePasswordFieldIsDisplayedFillItWithPassword("Test123!") (2.4s)
+And I press the sign-in button
+Log: Sign-in Button Pressed
+-> done: LoginSteps.WhenIPressTheSign_InButton() (4.8s)
+Then the new page should contain https://www.evernote.com/Home.action
+Log: Intended page loaded
+-> done: LoginSteps.ThenTheNewPageShouldContain("https://www.evern...") (2.0s)
+When I click on the add note button
+Log: Add note button selected
+-> done: NoteSteps.WhenIClickOnTheAddNoteButton() (6.6s)
+And I confirm that a new note is provided
+Log: New note provided
+-> done: NoteSteps.WhenIConfirmThatANewNoteIsProvided() (2.1s)
+And I enter Title2 note title
+Log: Note Title Entered
+-> done: NoteSteps.WhenIEnterNoteTitle("Title2") (2.4s)
+Then I click on the done button
+Log: Done button clicked
+-> done: NoteSteps.ThenIClickOnTheDoneButton() (2.3s)
+When I click on the account image
+-> done: LoginSteps.WhenIClickOnTheAccountImage() (2.2s)
+And I will logout
+-> done: NoteSteps.WhenIWillLogout() (6.3s)
+Then I shall be directed to page https://evernote.com/logged-out/
+Log: Intended page loaded
+-> done: NoteSteps.ThenIShallBeDirectedToPageHttpsEvernote_ComLogged_Out("https://evernote....") (0.4s)
+When I have to click on sign button
+Log: Login button pressed
+-> done: LoginSteps.WhenIHaveToClickOnSignButton() (1.4s)
+Then the new page should be https://www.evernote.com/Login.action
+Log: Intended page loaded
+-> done: LoginSteps.ThenTheNewPageShouldBeHttpsWww_Evernote_ComLogin_Action("https://www.evern...") (0.0s)
+When login page is loaded fill email with gilbert.zerafa@gmail.com
+Log: Email / Username Entered
+-> done: LoginSteps.WhenLoginPageIsLoadedFillEmailWithUsername("gilbert.zerafa@gm...") (0.7s)
+And I press the continue button
+Log: Continue Button Pressed
+-> done: LoginSteps.WhenIPressTheContinueButton() (0.1s)
+Then I should see the password field
+Log: Password Field Visable
+-> done: LoginSteps.ThenIShouldSeeThePasswordField() (0.1s)
+When the password field is displayed fill it with Test123!
+Log: Password Field Filled
+-> done: LoginSteps.WhenThePasswordFieldIsDisplayedFillItWithPassword("Test123!") (2.3s)
+And I press the sign-in button
+Log: Sign-in Button Pressed
+-> done: LoginSteps.WhenIPressTheSign_InButton() (5.2s)
+Then the new page should contain https://www.evernote.com/Home.action
+Log: Intended page loaded
+-> done: LoginSteps.ThenTheNewPageShouldContain("https://www.evern...") (2.1s)
+When I see the note list
+Log: Note list provided
+-> done: NoteSteps.WhenISeeTheNoteList() (2.1s)
+Then I confirm that the new note Title2 is added
+Log: Added note listed!
+-> done: NoteSteps.ThenIConfirmThatTheNewNoteIsAdded("Title2") (2.1s)
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

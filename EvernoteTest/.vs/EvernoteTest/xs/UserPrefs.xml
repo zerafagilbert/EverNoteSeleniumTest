@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{5A594E1D-FCEB-4F54-B8E1-B47B7C664626}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EvernoteTest/Hook/HookScenarios.cs">
+    <Files>
+      <File FileName="EvernoteTest/Hook/HookScenarios.cs" Line="36" Column="57" />
+      <File FileName="EvernoteTest/FeatureSteps/LoginSteps.cs" Line="63" Column="10" />
+      <File FileName="EvernoteTest/SeleniumUtils/SeleniumGetMethods.cs" Line="59" Column="16" />
+      <File FileName="EvernoteTest/FeatureSteps/NoteSteps.cs" Line="70" Column="32" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.EvernoteTest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
